@@ -1,0 +1,34 @@
+.testimonials{
+    padding-left: 10vw;
+    padding-right: 10vw;
+    .head {
+        padding: 15px;
+        font-weight: 400;
+        height: fit-content;
+        span {
+          border-bottom: 3px solid transparent;
+          border-image: linear-gradient(to right, #4dbeff, #41ff66);
+          border-image-slice: 1;
+          border-radius: 10px;
+        }
+      }
+
+    .w{
+      .col{
+        .a{
+
+          .b{
+            .c{
+              display: flex;
+              align-items: center;
+              justify-items: center;
+              img{
+                padding: 1rem;
+                border-radius: 2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+}

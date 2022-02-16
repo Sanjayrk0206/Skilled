@@ -1,64 +1,60 @@
-.pathfinder {
-  padding-top: 130px;
-  height: 600px;
+.About {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 3vw;
+  padding-top: 20vh;
 }
 
-.pathfinder img {
+.About > img {
   max-width: 40vw;
+  padding-left: 5vw;
+  min-height: 30vh;
+  padding-right: 5vw;
 }
 
-.pathfinder .content {
-  width: 715px;
-  height: 375px;
+.About > .text-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.pathfinder .content .title {
-  padding: 0%;
-  width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  font-size: 37px;
-  margin: 35px 0;
-  font-weight: 500;
-  text-align: center;
-}
-
-.pathfinder .content p {
-  margin: 0 5%;
-  padding: 0 10%;
-  font-size: 20px;
-  text-align: center;
-}
-
-.pathfinder .content .buttondiv {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-right: 5vw;
 }
 
-.pathfinder .content .button {
+.About > .text-box > * {
+  text-align: center;
+}
+
+.About > .text-box > h1 {
+  margin: 0;
+  padding: .5vw;
+  font-weight: 400;
+  font-size: 2.1vw;
+}
+
+.About > .text-box > p {
+  margin: 0;
+  padding: .7vw;
+  font-weight: 400;
+  font-size: 1.2vw;
+  margin-bottom: .5vw;
+}
+
+.About .text-box .button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,7 +79,7 @@
   cursor: pointer;
 }
 
-.pathfinder .content .button h2 {
+.About .text-box .button h2 {
   margin: 0;
   font-weight: 600;
   height: -webkit-fit-content;

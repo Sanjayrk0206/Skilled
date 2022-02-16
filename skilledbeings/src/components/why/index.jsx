@@ -15,7 +15,7 @@ const Why = () => {
                 <div className="box">
                     <h1>Why career guidance is required</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />Pellentesque efficitur turpis sed blandit imperdiet.</p>
-                    <a href='#'>Know more {">>>"}</a>
+                    <a href='/'>Know more {">>>"}</a>
                 </div>
             </div>
         </div>

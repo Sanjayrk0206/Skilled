@@ -2,8 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #c4c4c4;
-  padding: 20px;
+  padding: 10vh;
   .outercircle {
     margin: 0 40px;
     width: 175px;
@@ -13,6 +12,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    &:hover{
+      filter: drop-shadow(1px 5px 10px rgb(187, 187, 187));
+    }
   }
   .innercircle {
     width: 155px;

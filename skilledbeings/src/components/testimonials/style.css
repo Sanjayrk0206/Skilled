@@ -1,0 +1,37 @@
+.testimonials {
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.testimonials .head {
+  padding: 15px;
+  font-weight: 400;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.testimonials .head span {
+  border-bottom: 3px solid transparent;
+  -o-border-image: linear-gradient(to right, #4dbeff, #41ff66);
+     border-image: -webkit-gradient(linear, left top, right top, from(#4dbeff), to(#41ff66));
+     border-image: linear-gradient(to right, #4dbeff, #41ff66);
+  border-image-slice: 1;
+  border-radius: 10px;
+}
+
+.testimonials .w .col .a .b .c {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.testimonials .w .col .a .b .c img {
+  padding: 1rem;
+  border-radius: 2rem;
+}
+/*# sourceMappingURL=style.css.map */

@@ -9,10 +9,10 @@ const Navigation
     <div className='Navigation'>
         <img src={Logo} alt="Logo" className='Logo'/>
         <ul className='Navbar'>
-            <a href='#'><li>About</li></a>
+            <a href='/'><li>About</li></a>
             <a href='#how'><li>How it works</li></a>
-            <a href='#'><li>Features</li></a>
-            <a href='#'><li>blog</li></a>
+            <a href='/'><li>Features</li></a>
+            <a href='/'><li>blog</li></a>
         </ul>
         <div className='Buttondiv'>
             <span className='Signup'>

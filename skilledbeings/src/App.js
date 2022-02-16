@@ -4,15 +4,21 @@ import Footer from "./components/Footer";
 import Navigation from "./components/Navigation";
 import Pathfinder from "./components/pathfinder";
 import Why from "./components/why";
+import WhatWeDo from "./components/whatWeDo";
+import Testimonials from "./components/testimonials";
+
+import 'mdb-react-ui-kit/dist/css/mdb.min.css'
 
 function App() {
   return (
     <div>
       <Navigation />
+      <WhatWeDo />
       <Why />
       <Pathfinder />
       <Achievement />
       <Blog />
+      <Testimonials />
       <Footer />
     </div>
   );

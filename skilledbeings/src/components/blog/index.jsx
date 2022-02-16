@@ -50,7 +50,7 @@ export default class Blog extends Component {
     <div className='content'>
       <Slider {...settings}>
       {
-        list.map((card, index) =>  <div className='card' key={index}><Blogcard Image={card.Image} Head={card.Head} Content={card.Content}/></div>)
+        list.map((card, index) =>  <div className='ccard' key={index}><Blogcard Image={card.Image} Head={card.Head} Content={card.Content}/></div>)
       }
       </Slider>
     </div>
