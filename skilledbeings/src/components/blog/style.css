@@ -75,5 +75,15 @@
 
 .blog .slick-arrow::before {
   color: black !important;
+  font-size: 30px;
+}
+
+.blog .slick-list {
+  margin: 0 10px;
+}
+
+.blog .slick-prev,
+.blog .slick-next {
+  width: 30px !important;
 }
 /*# sourceMappingURL=style.css.map */

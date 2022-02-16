@@ -1,4 +1,5 @@
 import React from 'react'
+import CountUp from 'react-countup';
 
 import "./style.css";
 
@@ -25,17 +26,17 @@ const Achievement = () => {
   return (
     <div className='Achievement'>
         {
-          list.map((data, index) => <Circle index={index} title={data.title} content={data.content}/>)
+          list.map((data, index) => <Circle key={index} title={data.title} content={data.content}/>)
         }
     </div>
   )
 }
 
-function Circle(props, index) {
-  return <div className='outercircle' key={index}>
+function Circle(props) {
+  return <div className='outercircle'>
   <div className='innercircle'>
     <div>
-      <h1 className='title'>{props.title}</h1>
+      <CountUp end={props.title} className="title"/>
       <p className='content'>{props.content}</p>
     </div>
   </div>

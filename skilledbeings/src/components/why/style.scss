@@ -13,10 +13,6 @@
   .circle {
     width: 553px;
     height: 553px;
-    background-image: url("../../assets/images/background/circle.svg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    animation: rotation 25s ease-in-out infinite forwards;
   }
   .vector {
     position: absolute;
@@ -25,10 +21,6 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50%;
-    animation: vectoranimation 25s ease-in-out infinite forwards;
-  }
-  .animation {
-    animation: rotation 1s ease-in-out 5s infinite;
   }
   .content {
     display: flex;
@@ -42,43 +34,6 @@
       padding: 5%;
       // animation: color 25s infinite forwards;
     }
-  }
-}
-.vectordiv:hover {
-  .circle {
-    animation-play-state: paused;
-  }
-  .vector {
-    animation-play-state: paused;
-  }
-}
-@keyframes rotation {
-  0% {
-    transform: rotate(360deg);
-  }
-  20% {
-    transform: rotate(360deg);
-  }
-  25% {
-    transform: rotate(270deg);
-  }
-  45% {
-    transform: rotate(270deg);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-  70% {
-    transform: rotate(180deg);
-  }
-  75% {
-    transform: rotate(90deg);
-  }
-  95% {
-    transform: rotate(90deg);
-  }
-  100% {
-    transform: rotate(0deg);
   }
 }
 @keyframes vectoranimation {

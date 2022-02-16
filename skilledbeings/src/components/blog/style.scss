@@ -49,5 +49,13 @@
   }
   .slick-arrow::before {
     color: black !important;
+    font-size: 30px;
+  }
+  .slick-list {
+    margin: 0 10px;
+  }
+  .slick-prev,
+  .slick-next {
+    width: 30px !important;
   }
 }

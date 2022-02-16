@@ -33,6 +33,10 @@
 
 .footer .container .icon {
   padding: 0 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
 }
 
 .footer .container .icon a {

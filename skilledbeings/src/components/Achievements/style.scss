@@ -27,7 +27,8 @@
     .title {
       width: 100%;
       margin: 10px 0;
-      text-align: center;
+      display: flex;
+      justify-content: center;
       font-weight: 500;
       font-size: 50px;
     }
