@@ -1,0 +1,61 @@
+.footer .container {
+  height: 270px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+}
+
+.footer .container .Logo {
+  width: 300px;
+  height: 100px;
+}
+
+.footer .container .Navbar {
+  list-style: none;
+  float: right;
+}
+
+.footer .container .Navbar a {
+  color: black;
+}
+
+.footer .container .Navbar li {
+  float: left;
+  padding: 0px 50px;
+}
+
+.footer .container .icon {
+  padding: 0 20px;
+}
+
+.footer .container .icon a {
+  padding: 0 3px;
+  color: black;
+}
+
+.footer .copyright {
+  height: 30px;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.footer .copyright span {
+  padding: 0 5px;
+}
+/*# sourceMappingURL=style.css.map */

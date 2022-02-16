@@ -1,0 +1,89 @@
+.pathfinder {
+  padding-top: 130px;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pathfinder .content {
+  width: 715px;
+  height: 375px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pathfinder .content .title {
+  padding: 0%;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: 37px;
+  margin: 35px 0;
+  font-weight: 500;
+  text-align: center;
+}
+
+.pathfinder .content p {
+  margin: 0 5%;
+  padding: 0 10%;
+  font-size: 20px;
+  text-align: center;
+}
+
+.pathfinder .content .buttondiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pathfinder .content .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  width: 240px;
+  height: 50px;
+  margin: 30px 0;
+  background: -webkit-gradient(linear, right top, left top, color-stop(-23.33%, #1783c1), color-stop(181.88%, #1da838));
+  background: linear-gradient(270deg, #1783c1 -23.33%, #1da838 181.88%);
+  border: 4px solid #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.25), 8px 7px 11px rgba(162, 105, 121, 0.08);
+          box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.25), 8px 7px 11px rgba(162, 105, 121, 0.08);
+  border-radius: 53px;
+  cursor: pointer;
+}
+
+.pathfinder .content .button h2 {
+  margin: 0;
+  font-weight: 600;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+/*# sourceMappingURL=style.css.map */

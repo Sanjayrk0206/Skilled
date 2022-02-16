@@ -1,0 +1,53 @@
+.blog {
+  height: 600px;
+  margin: 50px 0;
+  .head {
+    font-weight: 400;
+    padding: 0 13%;
+    height: fit-content;
+    span {
+      border-bottom: 3px solid transparent;
+      border-image: linear-gradient(to right, #4dbeff, #41ff66);
+      border-image-slice: 1;
+      border-radius: 10px;
+    }
+  }
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .slider {
+      width: 80%;
+      background: none;
+    }
+  }
+  .card {
+    width: inherit;
+    height: 450px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+  .cardcontent {
+    padding: 25px;
+  }
+  .cardhead {
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 0;
+  }
+  .cardbody {
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 13px;
+  }
+  .cardreadmore {
+    display: block;
+    padding-top: 25px;
+    color: #56a5d2;
+  }
+  .slick-arrow::before {
+    color: black !important;
+  }
+}

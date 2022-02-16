@@ -1,0 +1,79 @@
+.blog {
+  height: 600px;
+  margin: 50px 0;
+}
+
+.blog .head {
+  font-weight: 400;
+  padding: 0 13%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.blog .head span {
+  border-bottom: 3px solid transparent;
+  -o-border-image: linear-gradient(to right, #4dbeff, #41ff66);
+     border-image: -webkit-gradient(linear, left top, right top, from(#4dbeff), to(#41ff66));
+     border-image: linear-gradient(to right, #4dbeff, #41ff66);
+  border-image-slice: 1;
+  border-radius: 10px;
+}
+
+.blog .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.blog .content .slider {
+  width: 80%;
+  background: none;
+}
+
+.blog .card {
+  width: inherit;
+  height: 450px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.blog .cardcontent {
+  padding: 25px;
+}
+
+.blog .cardhead {
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 0;
+}
+
+.blog .cardbody {
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 13px;
+}
+
+.blog .cardreadmore {
+  display: block;
+  padding-top: 25px;
+  color: #56a5d2;
+}
+
+.blog .slick-arrow::before {
+  color: black !important;
+}
+/*# sourceMappingURL=style.css.map */

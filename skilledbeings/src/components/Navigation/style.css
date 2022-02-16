@@ -1,0 +1,74 @@
+.Navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  font-weight: 500;
+  z-index: 1;
+}
+
+.Navigation .Logo {
+  width: 300px;
+  height: 100px;
+}
+
+.Navigation .Navbar {
+  list-style: none;
+  float: right;
+}
+
+.Navigation .Navbar a {
+  color: black;
+}
+
+.Navigation .Navbar li {
+  float: left;
+  padding: 0px 50px;
+}
+
+.Navigation .Buttondiv {
+  width: 15%;
+}
+
+.Navigation .Buttondiv span {
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.Navigation .Login {
+  background-color: black;
+  color: white;
+  border-radius: 7px;
+  margin-left: 2.5%;
+}
+
+.Navigation .Signup {
+  color: #c4c4c4;
+  border: 2px solid #c4c4c4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 7px;
+  margin-right: 2.5%;
+}
+
+.Navigation .Login:hover {
+  color: black;
+  border: 2px solid black;
+  background-color: white;
+}
+
+.Navigation .Signup:hover {
+  color: black;
+  border-color: black;
+}
+/*# sourceMappingURL=style.css.map */

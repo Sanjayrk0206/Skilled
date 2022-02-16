@@ -1,0 +1,43 @@
+.footer {
+  .container {
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    // box-shadow: 2px -2px 5px rgba($color: #000000, $alpha: 0.3);
+    .Logo {
+      width: 300px;
+      height: 100px;
+    }
+    .Navbar {
+      list-style: none;
+      float: right;
+    }
+    .Navbar a {
+      color: black;
+    }
+    .Navbar li {
+      float: left;
+      padding: 0px 50px;
+    }
+    .icon {
+      padding: 0 20px;
+      a {
+        padding: 0 3px;
+        color: black;
+      }
+    }
+  }
+  .copyright {
+    height: 30px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    span {
+      padding: 0 5px;
+    }
+  }
+}

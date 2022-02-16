@@ -1,0 +1,281 @@
+.why {
+  height: 600px;
+  width: 100%;
+  padding-top: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.why .vectordiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.why .circle {
+  width: 553px;
+  height: 553px;
+  background-image: url("../../assets/images/background/circle.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  -webkit-animation: rotation 25s ease-in-out infinite forwards;
+          animation: rotation 25s ease-in-out infinite forwards;
+}
+
+.why .vector {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  -webkit-animation: vectoranimation 25s ease-in-out infinite forwards;
+          animation: vectoranimation 25s ease-in-out infinite forwards;
+}
+
+.why .animation {
+  -webkit-animation: rotation 1s ease-in-out 5s infinite;
+          animation: rotation 1s ease-in-out 5s infinite;
+}
+
+.why .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 150px;
+}
+
+.why .content .box {
+  width: 625px;
+  height: 275px;
+  border-radius: 10px;
+  padding: 5%;
+}
+
+.vectordiv:hover .circle {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.vectordiv:hover .vector {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  20% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  25% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  45% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  70% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  75% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  95% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  20% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  25% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  45% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  70% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  75% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  95% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes vectoranimation {
+  0% {
+    background-image: url("../../assets/images/background/undraw_knowledge.svg");
+  }
+  20% {
+    background-image: url("../../assets/images/background/undraw_knowledge.svg");
+  }
+  25% {
+    background-image: url("../../assets/images/background/undraw_performance.svg");
+  }
+  45% {
+    background-image: url("../../assets/images/background/undraw_performance.svg");
+  }
+  50% {
+    background-image: url("../../assets/images/background/undraw_pie_graph.svg");
+  }
+  70% {
+    background-image: url("../../assets/images/background/undraw_pie_graph.svg");
+  }
+  75% {
+    background-image: url("../../assets/images/background/undraw_interview.svg");
+  }
+  95% {
+    background-image: url("../../assets/images/background/undraw_interview.svg");
+  }
+  100% {
+    background-image: url("../../assets/images/background/undraw_knowledge.svg");
+  }
+}
+
+@keyframes vectoranimation {
+  0% {
+    background-image: url("../../assets/images/background/undraw_knowledge.svg");
+  }
+  20% {
+    background-image: url("../../assets/images/background/undraw_knowledge.svg");
+  }
+  25% {
+    background-image: url("../../assets/images/background/undraw_performance.svg");
+  }
+  45% {
+    background-image: url("../../assets/images/background/undraw_performance.svg");
+  }
+  50% {
+    background-image: url("../../assets/images/background/undraw_pie_graph.svg");
+  }
+  70% {
+    background-image: url("../../assets/images/background/undraw_pie_graph.svg");
+  }
+  75% {
+    background-image: url("../../assets/images/background/undraw_interview.svg");
+  }
+  95% {
+    background-image: url("../../assets/images/background/undraw_interview.svg");
+  }
+  100% {
+    background-image: url("../../assets/images/background/undraw_knowledge.svg");
+  }
+}
+
+@-webkit-keyframes color {
+  0% {
+    background: linear-gradient(90.47deg, #1783c1 0.34%, rgba(23, 131, 193, 0.5) 99.57%);
+  }
+  20% {
+    background: linear-gradient(90.47deg, #1783c1 0.34%, rgba(23, 131, 193, 0.5) 99.57%);
+  }
+  25% {
+    background: linear-gradient(90.47deg, #1da838 0.34%, rgba(29, 168, 56, 0.5) 99.57%);
+  }
+  45% {
+    background: linear-gradient(90.47deg, #1da838 0.34%, rgba(29, 168, 56, 0.5) 99.57%);
+  }
+  50% {
+    background: linear-gradient(90.47deg, #da251d 0.34%, rgba(218, 37, 29, 0.5) 99.57%);
+  }
+  70% {
+    background: linear-gradient(90.47deg, #da251d 0.34%, rgba(218, 37, 29, 0.5) 99.57%);
+  }
+  75% {
+    background: linear-gradient(90.47deg, #f8c300 0.34%, rgba(248, 195, 0, 0.5) 99.57%);
+  }
+  95% {
+    background: linear-gradient(90.47deg, #f8c300 0.34%, rgba(248, 195, 0, 0.5) 99.57%);
+  }
+  100% {
+    background: linear-gradient(90.47deg, #1783c1 0.34%, rgba(23, 131, 193, 0.5) 99.57%);
+  }
+}
+
+@keyframes color {
+  0% {
+    background: linear-gradient(90.47deg, #1783c1 0.34%, rgba(23, 131, 193, 0.5) 99.57%);
+  }
+  20% {
+    background: linear-gradient(90.47deg, #1783c1 0.34%, rgba(23, 131, 193, 0.5) 99.57%);
+  }
+  25% {
+    background: linear-gradient(90.47deg, #1da838 0.34%, rgba(29, 168, 56, 0.5) 99.57%);
+  }
+  45% {
+    background: linear-gradient(90.47deg, #1da838 0.34%, rgba(29, 168, 56, 0.5) 99.57%);
+  }
+  50% {
+    background: linear-gradient(90.47deg, #da251d 0.34%, rgba(218, 37, 29, 0.5) 99.57%);
+  }
+  70% {
+    background: linear-gradient(90.47deg, #da251d 0.34%, rgba(218, 37, 29, 0.5) 99.57%);
+  }
+  75% {
+    background: linear-gradient(90.47deg, #f8c300 0.34%, rgba(248, 195, 0, 0.5) 99.57%);
+  }
+  95% {
+    background: linear-gradient(90.47deg, #f8c300 0.34%, rgba(248, 195, 0, 0.5) 99.57%);
+  }
+  100% {
+    background: linear-gradient(90.47deg, #1783c1 0.34%, rgba(23, 131, 193, 0.5) 99.57%);
+  }
+}
+/*# sourceMappingURL=style.css.map */

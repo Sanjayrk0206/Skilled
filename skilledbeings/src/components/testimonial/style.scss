@@ -1,0 +1,37 @@
+.testimonial {
+  min-height: 600px;
+  background-image: url("../../assets/images/background/testimonials.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .chatcontainer {
+    margin: 0 50px;
+  }
+  .head {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+  }
+  .content {
+    padding: 2.5% 5%;
+    max-width: 1100px;
+    height: fit-content;
+    background-color: white;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 4px solid lightgray;
+    h2 {
+      text-align: center;
+    }
+    p {
+      text-align: justify;
+    }
+  }
+}
