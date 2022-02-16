@@ -86,6 +86,7 @@
 .pathfinder .content .button h2 {
   margin: 0;
   font-weight: 600;
+  font-size: 25px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
