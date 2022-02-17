@@ -7,7 +7,7 @@ import Why from "./components/why";
 import WhatWeDo from "./components/whatWeDo";
 import Testimonials from "./components/testimonials";
 
-import 'mdb-react-ui-kit/dist/css/mdb.min.css'
+import "mdb-react-ui-kit/dist/css/mdb.min.css";
 
 function App() {
   return (

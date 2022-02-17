@@ -53,7 +53,7 @@ const Navigation = () => {
           <a href="#">Features</a>
         </li>
         <li>
-          <a href="#">Blog</a>
+          <a href="#blog">Blog</a>
         </li>
       </ul>
       <div className="Buttondiv">
@@ -72,11 +72,16 @@ const Navigation = () => {
         >
           &times;
         </a>
-        <div className="overlay-content">
+        <div
+          className="overlay-content"
+          onClick={() => {
+            setoverlay(false);
+          }}
+        >
           <a href="#">About</a>
           <a href="#">How it works</a>
           <a href="#">Features</a>
-          <a href="#">Blog</a>
+          <a href="#blog">Blog</a>
         </div>
       </div>
     </div>
