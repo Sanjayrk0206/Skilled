@@ -5,8 +5,8 @@
   padding: 10vh;
   .outercircle {
     margin: 0 40px;
-    min-width: 175px;
-    min-height: 175px;
+    width: 175px;
+    height: 175px;
     background: linear-gradient(270deg, #1783c1 1.37%, #1da838 97.26%);
     border-radius: 100px;
     display: flex;
@@ -17,8 +17,8 @@
     }
   }
   .innercircle {
-    min-width: 155px;
-    min-height: 155px;
+    width: 155px;
+    height: 155px;
     background-color: white;
     border-radius: 100px;
     display: flex;

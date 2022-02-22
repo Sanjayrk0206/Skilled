@@ -1,8 +1,8 @@
-.testimonials {
-  padding: 0 10vw;
+.Sections {
+  padding: 10vh 10vw;
 }
 
-.testimonials .head {
+.Sections .head {
   padding: 15px;
   font-weight: 400;
   height: -webkit-fit-content;
@@ -10,7 +10,7 @@
   height: fit-content;
 }
 
-.testimonials .head span {
+.Sections .head span {
   border-bottom: 3px solid transparent;
   -o-border-image: linear-gradient(to right, #4dbeff, #41ff66);
      border-image: -webkit-gradient(linear, left top, right top, from(#4dbeff), to(#41ff66));
@@ -19,7 +19,7 @@
   border-radius: 10px;
 }
 
-.testimonials .w .testimonial-wrap {
+.Sections .section-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,18 +31,11 @@
           align-items: center;
 }
 
-.testimonials .w .testimonial-wrap .a .b {
-  position: relative;
+.Sections .section-wrap .card {
+  max-width: 300px;
 }
 
-.testimonials .w .testimonial-wrap .a .b .c img {
-  padding: 1rem;
-  border-radius: 2rem;
-}
-
-@media (max-width: 1100px) {
-  .testimonials > .w > .testimonial-wrap > .a > .b > .c > img {
-    max-height: 30vh;
-  }
+.Sections .section-wrap .card .card-body {
+  padding: 2vh 2vw;
 }
 /*# sourceMappingURL=style.css.map */

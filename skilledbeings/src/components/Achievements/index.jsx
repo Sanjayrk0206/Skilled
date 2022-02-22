@@ -24,7 +24,7 @@ const Achievement = () => {
   ]
 
   return (
-    <div className='Achievement'>
+    <div className='Achievement d-flex align-items-center justify-content-center '>
         {
           list.map((data, index) => <Circle key={index} title={data.title} content={data.content}/>)
         }

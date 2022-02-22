@@ -7,19 +7,20 @@ export default function Testimonials() {
   return (
     <div className="testimonials">
     <h1 className='head'><span>Testimonials</span></h1>
-    <MDBRow className='row-cols-1 row-cols-md-2 g-4 w'>
-      <MDBCol>
+    <MDBRow className='row-cols-1 row-cols-xl-2 g-4 w'>
+      <MDBCol className='testimonial-wrap'>
         <Testimonial/>
       </MDBCol>
-      <MDBCol>
+      <MDBCol className='testimonial-wrap'>
         <Testimonial/>
       </MDBCol>
-      <MDBCol>
-        <Testimonial />
+      <MDBCol className='testimonial-wrap'>
+        <Testimonial/>
       </MDBCol>
-      <MDBCol>
-        <Testimonial />
+      <MDBCol className='testimonial-wrap'>
+        <Testimonial/>
       </MDBCol>
+
     </MDBRow>
     </div>
     
@@ -29,7 +30,7 @@ export default function Testimonials() {
 function Testimonial(props){
   return <MDBCard style={{ maxWidth: '540px' }} className='a'>
   <MDBRow className='g-0 b' >
-    <MDBCol md='4' className='c'>
+    <MDBCol md='4' className='c d-flex align-items-center justify-content-center'>
       <MDBCardImage src={image} alt='...' fluid />
     </MDBCol>
     <MDBCol md='8'>
