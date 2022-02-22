@@ -1,5 +1,5 @@
-import React from 'react'
-import CountUp from 'react-countup';
+import React from "react";
+import CountUp from "react-countup";
 
 import "./style.css";
 
@@ -21,26 +21,28 @@ const Achievement = () => {
       title: "2",
       content: "Student Consulted",
     },
-  ]
+  ];
 
   return (
-    <div className='Achievement d-flex align-items-center justify-content-center '>
-        {
-          list.map((data, index) => <Circle key={index} title={data.title} content={data.content}/>)
-        }
+    <div className="Achievement">
+      {list.map((data, index) => (
+        <Circle key={index} title={data.title} content={data.content} />
+      ))}
     </div>
-  )
-}
+  );
+};
 
 function Circle(props) {
-  return <div className='outercircle'>
-  <div className='innercircle'>
-    <div>
-      <CountUp end={props.title} className="title"/>
-      <p className='content'>{props.content}</p>
+  return (
+    <div className="outercircle">
+      <div className="innercircle">
+        <div>
+          <CountUp end={props.title} className="title" />
+          <p className="content">{props.content}</p>
+        </div>
+      </div>
     </div>
-  </div>
-</div>;
+  );
 }
 
-export default Achievement
+export default Achievement;

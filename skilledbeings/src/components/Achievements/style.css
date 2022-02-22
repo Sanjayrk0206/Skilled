@@ -1,4 +1,5 @@
 .Achievement {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8,13 +9,17 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10vh;
+  background-color: #c4c4c4;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .Achievement .outercircle {
-  margin: 0 40px;
-  width: 175px;
-  height: 175px;
+  margin: 20px 40px;
+  min-width: 175px;
+  max-width: 175px;
+  min-height: 175px;
+  max-height: 175px;
   background: -webkit-gradient(linear, right top, left top, color-stop(1.37%, #1783c1), color-stop(97.26%, #1da838));
   background: linear-gradient(270deg, #1783c1 1.37%, #1da838 97.26%);
   border-radius: 100px;
@@ -35,8 +40,10 @@
 }
 
 .Achievement .innercircle {
-  width: 155px;
-  height: 155px;
+  min-width: 155px;
+  min-height: 155px;
+  max-width: 155px;
+  max-height: 155px;
   background-color: white;
   border-radius: 100px;
   display: -webkit-box;

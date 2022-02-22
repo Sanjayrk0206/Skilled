@@ -82,8 +82,6 @@ const Why = () => {
       >
         <svg
           className="circle"
-          width="560"
-          height="560"
           viewBox="0 0 790 790"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -98,6 +96,8 @@ const Why = () => {
             onClick={() => {
               setDegree(180);
               setvector(red);
+              setcolor("#DA251D");
+              settitle("red");
             }}
           />
           <path
@@ -107,6 +107,8 @@ const Why = () => {
             onClick={() => {
               setDegree(270);
               setvector(green);
+              setcolor("#1DA838");
+              settitle("green");
             }}
           />
           <path
@@ -116,6 +118,8 @@ const Why = () => {
             onClick={() => {
               setDegree(0);
               setvector(blue);
+              setcolor("#1783C1");
+              settitle("blue");
             }}
           />
           <path
@@ -125,6 +129,8 @@ const Why = () => {
             onClick={() => {
               setDegree(90);
               setvector(yellow);
+              setcolor("#F8C300");
+              settitle("yellow");
             }}
           />
         </svg>
@@ -138,11 +144,7 @@ const Why = () => {
       <div className="content">
         <div className="box" style={{ backgroundColor: color }}>
           <h1>Why career guidance is required - {title}</h1>
-          <p>
-            {array.find((content) => content.id === title).content}
-            {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
-            Pellentesque efficitur turpis sed blandit imperdiet. */}
-          </p>
+          <p>{array.find((content) => content.id === title).content}</p>
           <a href="#">Know more {">>"}</a>
         </div>
       </div>

@@ -21,7 +21,7 @@ export const Footer = () => {
           <a href="#">
             <li>About</li>
           </a>
-          <a href="#how">
+          <a href="#how" style={{ whiteSpace: "nowrap" }}>
             <li>How it works</li>
           </a>
           <a href="#">

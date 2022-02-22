@@ -1,5 +1,8 @@
 .testimonials {
   padding: 0 10vw;
+  top: -60px;
+  position: relative;
+  padding-top: 130px;
 }
 
 .testimonials .head {

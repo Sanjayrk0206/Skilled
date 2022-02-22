@@ -17,8 +17,8 @@ function App() {
       <WhatWeDo />
       <Why />
       <Pathfinder />
+      <Sections />
       <Achievement />
-      <Sections/>
       <Blog />
       <Testimonials />
       <Footer />

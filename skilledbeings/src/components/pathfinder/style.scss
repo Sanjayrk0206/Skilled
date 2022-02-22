@@ -1,18 +1,24 @@
 .pathfinder {
   padding-top: 130px;
-  height: 600px;
+  min-height: 600px;
+  height: fit-content;
+  top: -60px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   img {
-    max-width: 40vw;
+    width: 50% !important;
+    min-width: 375px;
   }
   .content {
-    width: 715px;
+    max-width: 700px;
+    width: 100%;
     height: 375px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap-reverse;
     .title {
       padding: 0%;
       width: 100%;

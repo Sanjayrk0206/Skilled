@@ -1,5 +1,8 @@
 .Sections {
-  padding: 10vh 10vw;
+  padding: 0 10vw;
+  top: -60px;
+  position: relative;
+  padding-top: 130px;
 }
 
 .Sections .head {
