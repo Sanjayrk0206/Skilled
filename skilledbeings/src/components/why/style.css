@@ -26,8 +26,24 @@
 }
 
 .why .circle {
-  width: 553px;
-  height: 553px;
+  -webkit-transition: 3s;
+  transition: 3s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+
+.why .intersect {
+  cursor: pointer;
+}
+
+.why .in:hover {
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.4));
+          filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.4));
+}
+
+.why .out:hover {
+  -webkit-filter: drop-shadow(-3px -3px 2px rgba(0, 0, 0, 0.4));
+          filter: drop-shadow(-3px -3px 2px rgba(0, 0, 0, 0.4));
 }
 
 .why .vector {
@@ -37,6 +53,10 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 50%;
+  -webkit-transition: 3s;
+  transition: 3s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
 }
 
 .why .content {
@@ -57,125 +77,20 @@
   height: 275px;
   border-radius: 10px;
   padding: 5%;
+  -webkit-transition: 3s;
+  transition: 3s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  color: white;
 }
 
-@-webkit-keyframes vectoranimation {
-  0% {
-    background-image: url("../../assets/images/background/undraw_knowledge.svg");
-  }
-  20% {
-    background-image: url("../../assets/images/background/undraw_knowledge.svg");
-  }
-  25% {
-    background-image: url("../../assets/images/background/undraw_performance.svg");
-  }
-  45% {
-    background-image: url("../../assets/images/background/undraw_performance.svg");
-  }
-  50% {
-    background-image: url("../../assets/images/background/undraw_pie_graph.svg");
-  }
-  70% {
-    background-image: url("../../assets/images/background/undraw_pie_graph.svg");
-  }
-  75% {
-    background-image: url("../../assets/images/background/undraw_interview.svg");
-  }
-  95% {
-    background-image: url("../../assets/images/background/undraw_interview.svg");
-  }
-  100% {
-    background-image: url("../../assets/images/background/undraw_knowledge.svg");
-  }
+.why .content .box a {
+  color: black;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
-@keyframes vectoranimation {
-  0% {
-    background-image: url("../../assets/images/background/undraw_knowledge.svg");
-  }
-  20% {
-    background-image: url("../../assets/images/background/undraw_knowledge.svg");
-  }
-  25% {
-    background-image: url("../../assets/images/background/undraw_performance.svg");
-  }
-  45% {
-    background-image: url("../../assets/images/background/undraw_performance.svg");
-  }
-  50% {
-    background-image: url("../../assets/images/background/undraw_pie_graph.svg");
-  }
-  70% {
-    background-image: url("../../assets/images/background/undraw_pie_graph.svg");
-  }
-  75% {
-    background-image: url("../../assets/images/background/undraw_interview.svg");
-  }
-  95% {
-    background-image: url("../../assets/images/background/undraw_interview.svg");
-  }
-  100% {
-    background-image: url("../../assets/images/background/undraw_knowledge.svg");
-  }
-}
-
-@-webkit-keyframes color {
-  0% {
-    background: linear-gradient(90.47deg, #1783c1 0.34%, rgba(23, 131, 193, 0.5) 99.57%);
-  }
-  20% {
-    background: linear-gradient(90.47deg, #1783c1 0.34%, rgba(23, 131, 193, 0.5) 99.57%);
-  }
-  25% {
-    background: linear-gradient(90.47deg, #1da838 0.34%, rgba(29, 168, 56, 0.5) 99.57%);
-  }
-  45% {
-    background: linear-gradient(90.47deg, #1da838 0.34%, rgba(29, 168, 56, 0.5) 99.57%);
-  }
-  50% {
-    background: linear-gradient(90.47deg, #da251d 0.34%, rgba(218, 37, 29, 0.5) 99.57%);
-  }
-  70% {
-    background: linear-gradient(90.47deg, #da251d 0.34%, rgba(218, 37, 29, 0.5) 99.57%);
-  }
-  75% {
-    background: linear-gradient(90.47deg, #f8c300 0.34%, rgba(248, 195, 0, 0.5) 99.57%);
-  }
-  95% {
-    background: linear-gradient(90.47deg, #f8c300 0.34%, rgba(248, 195, 0, 0.5) 99.57%);
-  }
-  100% {
-    background: linear-gradient(90.47deg, #1783c1 0.34%, rgba(23, 131, 193, 0.5) 99.57%);
-  }
-}
-
-@keyframes color {
-  0% {
-    background: linear-gradient(90.47deg, #1783c1 0.34%, rgba(23, 131, 193, 0.5) 99.57%);
-  }
-  20% {
-    background: linear-gradient(90.47deg, #1783c1 0.34%, rgba(23, 131, 193, 0.5) 99.57%);
-  }
-  25% {
-    background: linear-gradient(90.47deg, #1da838 0.34%, rgba(29, 168, 56, 0.5) 99.57%);
-  }
-  45% {
-    background: linear-gradient(90.47deg, #1da838 0.34%, rgba(29, 168, 56, 0.5) 99.57%);
-  }
-  50% {
-    background: linear-gradient(90.47deg, #da251d 0.34%, rgba(218, 37, 29, 0.5) 99.57%);
-  }
-  70% {
-    background: linear-gradient(90.47deg, #da251d 0.34%, rgba(218, 37, 29, 0.5) 99.57%);
-  }
-  75% {
-    background: linear-gradient(90.47deg, #f8c300 0.34%, rgba(248, 195, 0, 0.5) 99.57%);
-  }
-  95% {
-    background: linear-gradient(90.47deg, #f8c300 0.34%, rgba(248, 195, 0, 0.5) 99.57%);
-  }
-  100% {
-    background: linear-gradient(90.47deg, #1783c1 0.34%, rgba(23, 131, 193, 0.5) 99.57%);
-  }
+.why .content .box a:hover {
+  font-size: 19px;
 }
 /*# sourceMappingURL=style.css.map */
