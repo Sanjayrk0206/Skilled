@@ -1,5 +1,6 @@
 .Achievement {
   width: 100%;
+  padding: 7vh 5vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9,7 +10,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #c4c4c4;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -75,5 +75,22 @@
   width: 80%;
   margin: 0 10%;
   text-align: center;
+}
+
+.AchievementWrap .head {
+  font-weight: 400;
+  padding: 0 13%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.AchievementWrap .head span {
+  border-bottom: 3px solid transparent;
+  -o-border-image: linear-gradient(to right, #4dbeff, #41ff66);
+     border-image: -webkit-gradient(linear, left top, right top, from(#4dbeff), to(#41ff66));
+     border-image: linear-gradient(to right, #4dbeff, #41ff66);
+  border-image-slice: 1;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=style.css.map */

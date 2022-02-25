@@ -24,11 +24,17 @@ const Achievement = () => {
   ];
 
   return (
-    <div className="Achievement">
-      {list.map((data, index) => (
-        <Circle key={index} title={data.title} content={data.content} />
-      ))}
+    <div className="AchievementWrap">
+      <h1 className="head">
+        <span>Achievements</span>
+      </h1>
+      <div className="Achievement">
+        {list.map((data, index) => (
+          <Circle key={index} title={data.title} content={data.content} />
+        ))}
+      </div>      
     </div>
+
   );
 };
 
