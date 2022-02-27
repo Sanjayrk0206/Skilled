@@ -5,37 +5,65 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+}
+
+.Navigation .NavContainer {
+  min-width: 390px;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
   position: fixed;
   background-color: white;
   font-weight: 500;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
   z-index: 1;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding: 0 5%;
 }
 
-.Navigation .Logo {
-  width: 300px;
-  height: 100px;
+.Navigation .NavContainer .Logodiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.Navigation .Navicon {
-  width: 40px;
-  height: 40px;
+.Navigation .NavContainer .Logo {
+  width: calc(150px + 5vw);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.Navigation .NavContainer .Navicon {
+  width: 35px;
+  height: 35px;
   padding: 5px;
   margin: 20px;
   color: #c4c4c4;
 }
 
-.Navigation .Navicon:hover {
+.Navigation .NavContainer .Navicon:hover {
   color: #000;
   cursor: pointer;
 }
 
-.Navigation .overlay {
+.Navigation .NavContainer .overlay {
   height: 100%;
   width: 0;
   position: fixed;
@@ -49,7 +77,7 @@
   transition: 0.5s;
 }
 
-.Navigation .overlay-content {
+.Navigation .NavContainer .overlay-content {
   position: relative;
   top: 25%;
   width: 100%;
@@ -57,7 +85,7 @@
   margin-top: 30px;
 }
 
-.Navigation .overlay a {
+.Navigation .NavContainer .overlay a {
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
@@ -67,12 +95,12 @@
   transition: 0.3s;
 }
 
-.Navigation .overlay a:hover,
-.Navigation .overlay a:focus {
+.Navigation .NavContainer .overlay a:hover,
+.Navigation .NavContainer .overlay a:focus {
   color: #f1f1f1;
 }
 
-.Navigation .overlay .closebtn {
+.Navigation .NavContainer .overlay .closebtn {
   position: absolute;
   top: 20px;
   right: 45px;
@@ -80,23 +108,24 @@
   cursor: pointer;
 }
 
-.Navigation .Navbar {
+.Navigation .NavContainer .Navbar {
   list-style: none;
   float: right;
+  padding: 0;
 }
 
-.Navigation .Navbar a {
+.Navigation .NavContainer .Navbar a {
   color: black;
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
 }
 
-.Navigation .Navbar li {
+.Navigation .NavContainer .Navbar li {
   float: left;
-  padding: 0px 50px;
+  padding: 0px 30px;
 }
 
-.Navigation .Navbar a:hover {
+.Navigation .NavContainer .Navbar a:hover {
   background-image: -webkit-gradient(linear, right top, left top, color-stop(1.37%, #1783c1), color-stop(97.26%, #1da838));
   background-image: linear-gradient(270deg, #1783c1 1.37%, #1da838 97.26%);
   background-clip: text;
@@ -108,26 +137,48 @@
   border-bottom: 2px solid;
 }
 
-.Navigation .Buttondiv {
+.Navigation .NavContainer .Buttonicon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.Navigation .NavContainer .Buttonicon .Navicon {
+  width: 35px !important;
+  height: 35px !important;
+  margin: 5px;
+}
+
+.Navigation .NavContainer .Buttondiv {
+  -ms-flex-item-align: end !important;
+      -ms-grid-row-align: end !important;
+      align-self: end !important;
   min-width: 200px;
   margin: 20px 0;
 }
 
-.Navigation .Buttondiv span {
+.Navigation .NavContainer .Buttondiv span {
   font-size: 15px;
   font-family: "Montserrat", sans-serif;
   padding: 10px 20px;
   cursor: pointer;
 }
 
-.Navigation .Login {
+.Navigation .NavContainer .Login {
   background-color: black;
   color: white;
   border-radius: 7px;
   margin-left: 2.5%;
 }
 
-.Navigation .Signup {
+.Navigation .NavContainer .Signup {
   display: inline-block;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -137,22 +188,23 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 7px;
+  padding: 6px 20px !important;
   margin-right: 2.5%;
 }
 
-.Navigation .Login:hover {
+.Navigation .NavContainer .Login:hover {
   color: black;
   border: 2px solid black;
   background-color: white;
 }
 
-.Navigation .Signup:hover {
+.Navigation .NavContainer .Signup:hover {
   color: black;
   border-color: black;
 }
 
-.dropshadow {
-  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+.Navigation .dropshadow {
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
 }
 /*# sourceMappingURL=style.css.map */

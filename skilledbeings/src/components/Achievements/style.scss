@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  background-color: #c4c4c4;
   .outercircle {
     margin: 20px 40px;
     min-width: 175px;
@@ -47,9 +48,8 @@
   }
 }
 
-
-.AchievementWrap{
-    .head {
+.AchievementWrap {
+  .head {
     font-weight: 400;
     padding: 0 13%;
     height: fit-content;

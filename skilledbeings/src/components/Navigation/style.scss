@@ -1,126 +1,154 @@
 .Navigation {
   display: flex;
   justify-content: center;
-  align-items: center;
+  height: fit-content;
   width: 100%;
-  position: fixed;
-  background-color: white;
-  font-weight: 500;
-  z-index: 1;
-  flex-wrap: wrap;
-  .Logo {
-    width: 300px;
-    height: 100px;
-  }
-  .Navicon {
-    width: 40px;
-    height: 40px;
-    padding: 5px;
-    margin: 20px;
-    color: #c4c4c4;
-  }
-  .Navicon:hover {
-    color: #000;
-    cursor: pointer;
-  }
-  .overlay {
-    height: 100%;
-    width: 0;
+  .NavContainer {
+    min-width: 390px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: fixed;
+    background-color: white;
+    font-weight: 500;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
     z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.9);
-    overflow-x: hidden;
-    transition: 0.5s;
-  }
-
-  .overlay-content {
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-  }
-
-  .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-
-  .overlay a:hover,
-  .overlay a:focus {
-    color: #f1f1f1;
-  }
-
-  .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-    cursor: pointer;
-  }
-  .Navbar {
-    list-style: none;
-    float: right;
-  }
-  .Navbar a {
-    color: black;
-    font-family: "Montserrat", sans-serif;
-    text-decoration: none;
-  }
-  .Navbar li {
-    float: left;
-    padding: 0px 50px;
-  }
-  .Navbar a:hover {
-    background-image: linear-gradient(270deg, #1783c1 1.37%, #1da838 97.26%);
-    background-clip: text;
-    color: transparent;
-    border-image: linear-gradient(90deg, #1783c1 1.37%, #1da838 97.26%);
-    border-image-slice: 1;
-    border-bottom: 2px solid;
-  }
-  .Buttondiv {
-    min-width: 200px;
-    margin: 20px 0;
-    span {
-      font-size: 15px;
-      font-family: "Montserrat", sans-serif;
-      padding: 10px 20px;
+    flex-wrap: nowrap;
+    padding: 0 5%;
+    .Logodiv {
+      display: flex;
+      align-items: center;
+    }
+    .Logo {
+      width: calc(150px + 5vw);
+      height: fit-content;
+    }
+    .Navicon {
+      width: 35px;
+      height: 35px;
+      padding: 5px;
+      margin: 20px;
+      color: #c4c4c4;
+    }
+    .Navicon:hover {
+      color: #000;
       cursor: pointer;
     }
+    .overlay {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: rgb(0, 0, 0);
+      background-color: rgba(0, 0, 0, 0.9);
+      overflow-x: hidden;
+      transition: 0.5s;
+    }
+
+    .overlay-content {
+      position: relative;
+      top: 25%;
+      width: 100%;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .overlay a {
+      padding: 8px;
+      text-decoration: none;
+      font-size: 36px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .overlay a:hover,
+    .overlay a:focus {
+      color: #f1f1f1;
+    }
+
+    .overlay .closebtn {
+      position: absolute;
+      top: 20px;
+      right: 45px;
+      font-size: 60px;
+      cursor: pointer;
+    }
+    .Navbar {
+      list-style: none;
+      float: right;
+      padding: 0;
+    }
+    .Navbar a {
+      color: black;
+      font-family: "Montserrat", sans-serif;
+      text-decoration: none;
+    }
+    .Navbar li {
+      float: left;
+      padding: 0px 30px;
+    }
+    .Navbar a:hover {
+      background-image: linear-gradient(270deg, #1783c1 1.37%, #1da838 97.26%);
+      background-clip: text;
+      color: transparent;
+      border-image: linear-gradient(90deg, #1783c1 1.37%, #1da838 97.26%);
+      border-image-slice: 1;
+      border-bottom: 2px solid;
+    }
+    .Buttonicon {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: nowrap;
+      .Navicon {
+        width: 35px !important;
+        height: 35px !important;
+        margin: 5px;
+      }
+    }
+    .Buttondiv {
+      align-self: end !important;
+      min-width: 200px;
+      margin: 20px 0;
+      span {
+        font-size: 15px;
+        font-family: "Montserrat", sans-serif;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+    }
+    .Login {
+      background-color: black;
+      color: white;
+      border-radius: 7px;
+      margin-left: 2.5%;
+    }
+    .Signup {
+      display: inline-block;
+      width: fit-content;
+      color: #c4c4c4;
+      border: 2px solid #c4c4c4;
+      box-sizing: border-box;
+      border-radius: 7px;
+      padding: 6px 20px !important;
+      margin-right: 2.5%;
+    }
+    .Login:hover {
+      color: black;
+      border: 2px solid black;
+      background-color: white;
+    }
+    .Signup:hover {
+      color: black;
+      border-color: black;
+    }
   }
-  .Login {
-    background-color: black;
-    color: white;
-    border-radius: 7px;
-    margin-left: 2.5%;
+  .dropshadow {
+    box-shadow: 0px 2px 5px rgba($color: #000000, $alpha: 0.3);
   }
-  .Signup {
-    display: inline-block;
-    width: fit-content;
-    color: #c4c4c4;
-    border: 2px solid #c4c4c4;
-    box-sizing: border-box;
-    border-radius: 7px;
-    margin-right: 2.5%;
-  }
-  .Login:hover {
-    color: black;
-    border: 2px solid black;
-    background-color: white;
-  }
-  .Signup:hover {
-    color: black;
-    border-color: black;
-  }
-}
-.dropshadow {
-  box-shadow: 2px 2px 5px rgba($color: #000000, $alpha: 0.3);
 }

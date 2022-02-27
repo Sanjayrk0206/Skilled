@@ -22,8 +22,8 @@
 .why .vectordiv {
   max-width: 560px;
   max-height: 560px;
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,8 +64,8 @@
   position: absolute;
   max-width: 350px;
   max-height: 350px;
-  min-width: 50%;
-  min-height: 30%;
+  width: calc(120px + 50vw);
+  height: calc(120px + 20vw);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -91,7 +91,6 @@
 .why .content .box {
   max-width: 625px;
   min-width: 80%;
-  min-height: 275px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -104,14 +103,24 @@
   color: white;
 }
 
+.why .content .box h1 {
+  font-size: calc(17px + 1vw);
+}
+
+.why .content .box p {
+  font-size: calc(13px + 0.3vw);
+}
+
 .why .content .box a {
+  position: -webkit-sticky;
+  position: sticky;
+  font-size: calc(13px + 0.3vw);
   color: black;
-  -webkit-transition: 1s;
-  transition: 1s;
 }
 
 .why .content .box a:hover {
-  font-size: 19px;
+  -webkit-text-decoration: 1px solid underline;
+          text-decoration: 1px solid underline;
 }
 
 @media only screen and (max-width: 1330px) {
