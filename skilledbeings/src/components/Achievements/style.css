@@ -12,7 +12,6 @@
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: #c4c4c4;
 }
 
 .Achievement .outercircle {

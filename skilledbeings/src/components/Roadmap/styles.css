@@ -1,6 +1,6 @@
 .Roadmap {
-  width: 100vw;
-  padding: 10vh 0;
+  width: 100%;
+  padding: 10vw;
   min-height: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15,11 +15,12 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
 .Roadmap .head {
   font-weight: 400;
-  padding: 0 13%;
+  padding: 15px;
   width: 100%;
   text-align: left;
   height: -webkit-fit-content;
@@ -36,44 +37,121 @@
   border-radius: 10px;
 }
 
-.Roadmap .RoadmapTiles {
+.Roadmap .MuiTimeLine {
+  width: 100%;
+}
+
+.Roadmap .RoadmapHorizontal {
   position: relative;
   max-height: 80vh;
-  width: 90vw;
+  max-width: 90vw;
   margin: auto 0;
 }
 
-.Roadmap .RoadmapTiles img {
+.Roadmap .RoadmapHorizontal img {
   max-height: 80vh;
   width: 90vw;
   margin: auto 0;
 }
 
-.Roadmap .RoadmapTiles .card {
+.Roadmap .RoadmapHorizontal .card {
   position: absolute;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   width: 20vw;
+  max-width: 20rem;
+  border-radius: 1.5rem;
 }
 
-.Roadmap .RoadmapTiles .danger {
+.Roadmap .RoadmapHorizontal .card .card-title {
+  color: black;
+}
+
+.Roadmap .RoadmapHorizontal .card .card-subtitle {
+  font-weight: bold;
+  color: #7e7e7e;
+}
+
+.Roadmap .RoadmapHorizontal .card .card-text {
+  font-size: .8rem;
+  margin: 2px 0;
+}
+
+.Roadmap .RoadmapHorizontal .danger {
   bottom: 59%;
   right: 56%;
 }
 
-.Roadmap .RoadmapTiles .success {
+.Roadmap .RoadmapHorizontal .success {
   bottom: 22%;
   right: 76%;
 }
 
-.Roadmap .RoadmapTiles .warning {
+.Roadmap .RoadmapHorizontal .warning {
   left: 76%;
   top: 26%;
 }
 
-.Roadmap .RoadmapTiles .info {
+.Roadmap .RoadmapHorizontal .info {
   top: 68%;
   left: 62%;
+}
+
+.Roadmap .RoadmapVertical {
+  position: relative;
+}
+
+.Roadmap .RoadmapVertical img {
+  height: 90vh;
+}
+
+.Roadmap .RoadmapVertical .card {
+  position: absolute;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 30vw;
+  border-radius: 1rem;
+  font-size: 12px;
+  max-width: 20rem;
+}
+
+.Roadmap .RoadmapVertical .card .card-title {
+  color: black;
+}
+
+.Roadmap .RoadmapVertical .card .card-body {
+  padding: 1rem;
+}
+
+.Roadmap .RoadmapVertical .card .card-subtitle {
+  font-weight: bold;
+  color: #7e7e7e;
+}
+
+.Roadmap .RoadmapVertical .card .card-text {
+  font-size: .8rem;
+  margin: 2px 0;
+}
+
+.Roadmap .RoadmapVertical .success {
+  bottom: 70%;
+  left: 61%;
+}
+
+.Roadmap .RoadmapVertical .danger {
+  bottom: 52%;
+  right: 57%;
+}
+
+.Roadmap .RoadmapVertical .info {
+  left: 57%;
+  bottom: 15%;
+}
+
+.Roadmap .RoadmapVertical .warning {
+  right: 62%;
+  bottom: 0;
 }
 /*# sourceMappingURL=styles.css.map */
