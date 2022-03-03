@@ -142,7 +142,16 @@ const Why = () => {
         ></div>
       </div>
       <div className="content">
-        <div className="box" style={{ backgroundColor: color }}>
+        <div
+          className="box"
+          style={{ backgroundColor: color }}
+          onMouseEnter={() => {
+            setisPaused(true);
+          }}
+          onMouseLeave={() => {
+            setisPaused(false);
+          }}
+        >
           <h1>Why career guidance is required - {title}</h1>
           <p>{array.find((content) => content.id === title).content}</p>
           <a href="#">Know more {">>"}</a>
