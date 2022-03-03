@@ -23,7 +23,7 @@ const Navigation = () => {
       if (
         window.innerWidth <= 1370 ||
         window.screen.width <= 1370 ||
-        document.getElementById("NavContainer").style.height == "87.2px"
+        document.getElementById("NavContainer").style.height === "87.2px"
       ) {
         setwidth(true);
       } else {
